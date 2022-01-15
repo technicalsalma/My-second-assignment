@@ -10,7 +10,7 @@ body {
 .container {
     width: 1150px;
     margin: 0 auto;
-    background-color: rgb(253, 253, 253);
+
 }
 
 /* ==========header section========== */
@@ -23,6 +23,7 @@ body {
 
 .Start-your-Journey {
     display: flex;
+
     justify-content: space-between;
     margin-bottom: 80px;
 }
@@ -45,13 +46,13 @@ body {
     border-radius: 41px;
     width: 196px;
     margin-top: 20px;
-    opacity: 1;
     transition: 0.5s;
-
 }
 
 .button:hover {
-    opacity: 0.6;
+    font-size: 20px;
+    background-color: #332f66;
+    ;
 }
 
 
@@ -67,8 +68,8 @@ body {
 /* ==========Popular Collection section========== */
 .Popular-titel {
     text-align: center;
-}
 
+}
 
 
 .Popular-Collections {
@@ -123,6 +124,70 @@ body {
     color: #E02C6D;
 }
 
+/* ==========Contact section========== */
+.hori {
+    margin: 50px;
+}
+
+.contact-titel {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+input,
+select,
+textarea {
+    width: 90%;
+    padding: 10px 2%;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+select {
+    width: 94%;
+}
+
+.Search_here {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.Search_here input {
+    width: 60%;
+    float: left;
+}
+
+.Search_here input[type="submit"] {
+    width: 35%;
+    float: left;
+    padding: 8px 3%;
+}
+
+
+.contact-me {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 80px;
+
+}
+
+.contact-form {
+    margin-top: 15px;
+}
+
+.contact-img {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
 /* ==========footer section========== */
 footer {
     background-color: #0A0826;
@@ -145,4 +210,79 @@ footer p {
 
 .icon {
     padding: 5px;
+}
+
+
+/* ==========Media Quries============= */
+
+/* =======mobile Devices====== */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .title-logo {
+        text-align: center;
+        margin: 0;
+
+    }
+
+    .start-paragraph {
+        padding: 0 80px;
+
+    }
+
+    .Start-your-Journey {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .button {
+        display: inline-block;
+    }
+
+
+    .Popular-Collections {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .socila-media-img {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .contact-me {
+        flex-direction: column;
+
+    }
+
+}
+
+/* ======Tablet devices===== */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container {
+        width: 100%;
+
+    }
+
+    .header-tag {
+        margin-left: 10px;
+    }
+
+    .Start-your {
+        width: 400px;
+    }
+
+    .Popular-Collections {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .contact-me {
+        flex-direction: column;
+
+    }
+
 }
